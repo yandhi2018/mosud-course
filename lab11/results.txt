@@ -1,0 +1,92 @@
+CREATE SCHEMA
+CREATE VIEW
+CREATE MATERIALIZED VIEW
+REFRESH MATERIALIZED VIEW
+   month    | customer_state | orders |  total   |      average
+------------+----------------+--------+----------+--------------------
+ 2017-05-01 | PR             |    206 | 35559.00 | 35532.218181818182
+ 2017-10-01 | PR             |    198 | 37404.60 | 35532.218181818182
+ 2017-11-01 | PR             |    365 | 54237.97 | 35532.218181818182
+ 2018-01-01 | PR             |    371 | 51705.11 | 35532.218181818182
+ 2018-02-01 | PR             |    335 | 51598.61 | 35532.218181818182
+ 2018-03-01 | PR             |    369 | 58850.79 | 35532.218181818182
+ 2018-04-01 | PR             |    381 | 76235.20 | 35532.218181818182
+ 2018-05-01 | PR             |    308 | 53994.09 | 35532.218181818182
+ 2018-06-01 | PR             |    306 | 50248.06 | 35532.218181818182
+ 2018-07-01 | PR             |    314 | 53725.51 | 35532.218181818182
+ 2018-08-01 | PR             |    327 | 46556.00 | 35532.218181818182
+(11 rows)
+
+CREATE TABLE
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+ depth |          node_id           |                path                 |      node_name
+-------+----------------------------+-------------------------------------+----------------------
+     0 | ST:PR                      | ST:PR                               | PR
+     1 | CT:PR:apucarana            | ST:PR -> CT:PR:apucarana            | apucarana
+     1 | CT:PR:araucaria            | ST:PR -> CT:PR:araucaria            | araucaria
+     1 | CT:PR:campo mourao         | ST:PR -> CT:PR:campo mourao         | campo mourao
+     1 | CT:PR:cascavel             | ST:PR -> CT:PR:cascavel             | cascavel
+     1 | CT:PR:cianorte             | ST:PR -> CT:PR:cianorte             | cianorte
+     1 | CT:PR:colombo              | ST:PR -> CT:PR:colombo              | colombo
+     1 | CT:PR:curitiba             | ST:PR -> CT:PR:curitiba             | curitiba
+     1 | CT:PR:foz do iguacu        | ST:PR -> CT:PR:foz do iguacu        | foz do iguacu
+     1 | CT:PR:francisco beltrao    | ST:PR -> CT:PR:francisco beltrao    | francisco beltrao
+     1 | CT:PR:guarapuava           | ST:PR -> CT:PR:guarapuava           | guarapuava
+     1 | CT:PR:londrina             | ST:PR -> CT:PR:londrina             | londrina
+     1 | CT:PR:maringa              | ST:PR -> CT:PR:maringa              | maringa
+     1 | CT:PR:paranagua            | ST:PR -> CT:PR:paranagua            | paranagua
+     1 | CT:PR:paranavai            | ST:PR -> CT:PR:paranavai            | paranavai
+     1 | CT:PR:pato branco          | ST:PR -> CT:PR:pato branco          | pato branco
+     1 | CT:PR:pinhais              | ST:PR -> CT:PR:pinhais              | pinhais
+     1 | CT:PR:ponta grossa         | ST:PR -> CT:PR:ponta grossa         | ponta grossa
+     1 | CT:PR:sao jose dos pinhais | ST:PR -> CT:PR:sao jose dos pinhais | sao jose dos pinhais
+     1 | CT:PR:toledo               | ST:PR -> CT:PR:toledo               | toledo
+     1 | CT:PR:umuarama             | ST:PR -> CT:PR:umuarama             | umuarama
+(21 rows)
+
+ depth |     node_id     |              path              | node_name
+-------+-----------------+--------------------------------+-----------
+     0 | CT:PR:apucarana | CT:PR:apucarana                | apucarana
+     1 | ST:PR           | CT:PR:apucarana -> ST:PR       | PR
+     2 | BR              | CT:PR:apucarana -> ST:PR -> BR | Brazil
+(3 rows)
+
+ root  | descendants
+-------+-------------
+ ST:AC |           8
+ ST:AL |          20
+ ST:AM |           5
+ ST:AP |           6
+ ST:BA |          20
+ ST:CE |          20
+ ST:DF |           6
+ ST:ES |          20
+ ST:GO |          20
+ ST:MA |          20
+ ST:MG |          20
+ ST:MS |          20
+ ST:MT |          20
+ ST:PA |          20
+ ST:PB |          20
+ ST:PE |          20
+ ST:PI |          20
+ ST:PR |          20
+ ST:RJ |          20
+ ST:RN |          20
+ ST:RO |          20
+ ST:RR |           2
+ ST:RS |          20
+ ST:SC |          20
+ ST:SE |          20
+ ST:SP |          20
+ ST:TO |          20
+(27 rows)
+
+SELECT 495
+UPDATE 1
+ safe_nodes
+------------
+        495
+(1 row)

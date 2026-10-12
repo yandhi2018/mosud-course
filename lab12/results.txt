@@ -1,0 +1,17 @@
+CREATE SCHEMA
+CREATE TABLE
+INSERT 0 0
+CREATE TABLE
+            product_id            | qty | version
+----------------------------------+-----+---------
+ 06edb72f1e0c64b14c5b79353f7abea3 |  10 |       0
+ 08574b074924071f4e201e151b152b4e |  10 |       0
+(2 rows)
+
+BEGIN
+            product_id            | qty
+----------------------------------+-----
+ 06edb72f1e0c64b14c5b79353f7abea3 |   9
+(1 row)
+
+ROLLBACK

@@ -1,0 +1,114 @@
+[
+  {
+    "experiment": "pids",
+    "result": {
+      "A": "186",
+      "B": "187"
+    }
+  },
+  {
+    "experiment": "lost_update",
+    "result": {
+      "read_A": 10,
+      "read_B": 10,
+      "actual": 9,
+      "expected": 8
+    }
+  },
+  {
+    "experiment": "row_lock_wait",
+    "result": {
+      "B_waiting": true,
+      "activity": [
+        [
+          "lab12_B",
+          "Lock",
+          "transactionid"
+        ]
+      ]
+    }
+  },
+  {
+    "experiment": "locked_B_read",
+    "result": [
+      [
+        "9"
+      ]
+    ]
+  },
+  {
+    "experiment": "locked_final_qty",
+    "result": 8
+  },
+  {
+    "experiment": "atomic_last_unit",
+    "result": {
+      "A": [
+        [
+          "0"
+        ]
+      ],
+      "B": [],
+      "final": 0
+    }
+  },
+  {
+    "experiment": "READ COMMITTED",
+    "result": {
+      "before": 10,
+      "after": 9
+    }
+  },
+  {
+    "experiment": "REPEATABLE READ",
+    "result": {
+      "before": 10,
+      "after": 10
+    }
+  },
+  {
+    "experiment": "phantom",
+    "result": {
+      "before": [
+        [
+          "0"
+        ]
+      ],
+      "after": [
+        [
+          "1"
+        ]
+      ]
+    }
+  },
+  {
+    "experiment": "deadlock",
+    "result": {
+      "A": "40P01: ERROR:  deadlock detected\nDETAIL:  Process 186 waits for ShareLock on transaction 990; blocked by process 187.\nProcess 187 waits for ShareLock on transaction 989; blocked by process 186.\nHINT:  See server log for query details.\nCONTEXT:  while updating tuple (0,103) in relation \"inventory\"\n",
+      "B": []
+    }
+  },
+  {
+    "experiment": "serialization_failure",
+    "result": "40001: ERROR:  could not serialize access due to concurrent update\n"
+  },
+  {
+    "experiment": "serialization_retry_qty",
+    "result": 8
+  },
+  {
+    "experiment": "restored",
+    "result": [
+      [
+        "06edb72f1e0c64b14c5b79353f7abea3",
+        "10",
+        "0"
+      ],
+      [
+        "08574b074924071f4e201e151b152b4e",
+        "10",
+        "0"
+      ]
+    ]
+  }
+]

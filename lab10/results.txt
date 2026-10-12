@@ -1,0 +1,20 @@
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+ coupon_code |           customer_id            |  use_date  |  category_name  | valid_from |  valid_to  | discount | customer_city
+-------------+----------------------------------+------------+-----------------+------------+------------+----------+---------------
+ NF4_A       | 00012a2ce6f8dcda20d059ce98491703 | 2018-02-02 | beleza_saude    | 2018-01-01 | 2019-01-01 |     5.00 | osasco
+ NF4_A       | 000161a058600d5901f007fab4c27140 | 2018-02-03 | beleza_saude    | 2018-01-01 | 2019-01-01 |     5.00 | itapecerica
+ NF4_B       | 00012a2ce6f8dcda20d059ce98491703 | 2018-02-04 | esporte_lazer   | 2018-01-01 | 2019-01-01 |    10.00 | osasco
+ NF4_B       | 0001fd6190edaaf884bcaf3d49edf079 | 2018-02-05 | esporte_lazer   | 2018-01-01 | 2019-01-01 |    10.00 | nova venecia
+ NF4_C       | 0001fd6190edaaf884bcaf3d49edf079 | 2018-02-06 | cama_mesa_banho | 2018-01-01 | 2019-01-01 |    15.00 | nova venecia
+(5 rows)
+
+ uses | coupon_definitions | customer_definitions
+------+--------------------+----------------------
+    5 |                  3 |                    3
+(1 row)

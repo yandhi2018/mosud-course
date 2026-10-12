@@ -1,0 +1,37 @@
+Table olist.sellers {
+ seller_id text [pk]
+}
+Table olist.orders {
+ order_id text [pk]
+}
+Table olist.product_category_name_translation {
+ product_category_name text [pk]
+}
+Table lab.coupons {
+ coupon_id bigint [pk, increment]
+ coupon_code text [not null, unique]
+ issuer_seller_id text [not null, ref: > olist.sellers.seller_id]
+ valid_from timestamp [not null]
+ valid_to timestamp [not null]
+ discount_pct decimal(5,2) [not null]
+ usage_limit int [not null]
+}
+Table lab.coupon_categories {
+ coupon_id bigint [not null, ref: > lab.coupons.coupon_id]
+ category_name text [not null, ref: > olist.product_category_name_translation.product_category_name]
+ indexes {
+  (coupon_id, category_name) [pk]
+ }
+}
+Table lab.coupon_uses {
+ use_id bigint [pk, increment]
+ coupon_id bigint [not null, ref: > lab.coupons.coupon_id]
+ order_id text [not null, ref: > olist.orders.order_id]
+ category_name text [not null]
+ used_at timestamp [not null]
+ discount_amount decimal(10,2) [not null]
+ indexes {
+  (coupon_id, order_id) [unique]
+ }
+}
+Ref: lab.coupon_uses.(coupon_id, category_name) > lab.coupon_categories.(coupon_id, category_name)

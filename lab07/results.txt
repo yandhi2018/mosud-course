@@ -1,0 +1,111 @@
+  table_name   |          column_name          | null_count
+---------------+-------------------------------+------------
+ order_reviews | review_answer_timestamp       |          0
+ order_reviews | review_comment_message        |      58247
+ order_reviews | review_comment_title          |      87656
+ order_reviews | review_creation_date          |          0
+ order_reviews | review_score                  |          0
+ orders        | order_approved_at             |        160
+ orders        | order_delivered_carrier_date  |       1783
+ orders        | order_delivered_customer_date |       2965
+ orders        | order_estimated_delivery_date |          0
+ orders        | order_purchase_timestamp      |          0
+ orders        | order_status                  |          0
+ products      | product_category_name         |        610
+ products      | product_description_lenght    |        610
+ products      | product_height_cm             |          2
+ products      | product_length_cm             |          2
+ products      | product_name_lenght           |        610
+ products      | product_photos_qty            |        610
+ products      | product_weight_g              |          2
+ products      | product_width_cm              |          2
+(19 rows)
+
+ all_orders | known_delivery | missing_delivery
+------------+----------------+------------------
+      99441 |          96476 |             2965
+(1 row)
+
+ wrong_eq
+----------
+        0
+(1 row)
+
+ wrong_ne
+----------
+        0
+(1 row)
+
+ correct_null
+--------------
+         2965
+(1 row)
+
+ correct_nonnull
+-----------------
+           96476
+(1 row)
+
+ a | b | ordinary_eq | distinct_values
+---+---+-------------+-----------------
+ 1 | 1 | t           | f
+ 1 |   |             | t
+   |   |             | f
+(3 rows)
+
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+ via_not_in
+------------
+          0
+(1 row)
+
+ via_not_exists
+----------------
+          99440
+(1 row)
+
+ filter_place | joined_rows | orders
+--------------+-------------+--------
+ filter_on    |       99791 |  99441
+ filter_where |       76470 |  76120
+(2 rows)
+
+            review_id             |                                comment
+----------------------------------+-----------------------------------------------------------------------
+ 0001239bc1de2e33cb583967c2ca4c67 | Комментарий отсутствует
+ 0001cc6860aeaf5b9017fe4131a52e62 | Комментарий отсутствует
+ 00020c7512a52e92212f12d3e37513c0 | A entrega foi super rápida e o pendente é lindo! Igual a foto mesmo!
+ 00032b0141443497c898b3093690af51 | Комментарий отсутствует
+ 00034d88989f9a4c393bdcaec301537f | Комментарий отсутствует
+ 000359bceee1b6fe876b30d35b5f9ef2 | Комментарий отсутствует
+ 00041b1f51e77a663df6db3f539d694f | Комментарий отсутствует
+ 00046a69550325aea5fb89f65c7387f2 | GOSTEI DA CAPINHA DE CELULAR, VEIO COMO EU ESPERAVA.
+ 0005534973388c830bb858cfba83b17b | otimo produto. prazo cumprido. sabor tambem muito bom!
+ 00055e36e9608fe969231e551983a69c | O produto foi entregue muito antes do esperado. Ótima agilidade.
+(10 rows)
+
+ safe_ratio
+------------
+
+(1 row)
+
+          metric           | missing |  pct
+---------------------------+---------+-------
+ orders_without_delivery   |    2965 |  2.98
+ products_without_category |     610 |  1.85
+ reviews_without_text      |   58247 | 58.70
+(3 rows)
+
+ order_status | orders | missing
+--------------+--------+---------
+ approved     |      2 |       2
+ canceled     |    625 |     619
+ created      |      5 |       5
+ delivered    |  96478 |       8
+ invoiced     |    314 |     314
+ processing   |    301 |     301
+ shipped      |   1107 |    1107
+ unavailable  |    609 |     609
+(8 rows)

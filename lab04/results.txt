@@ -1,0 +1,103 @@
+CREATE VIEW
+             order_id             |        customer_unique_id        | customer_state |            review_id             | review_score | delay_days | late_days
+----------------------------------+----------------------------------+----------------+----------------------------------+--------------+------------+-----------
+ 00010242fe8c5a6d1ba2dd792cb16214 | 871766c5855e863f6eccc05f988b23cb | RJ             | 97ca439bc427b48bc1cd7177abe71365 |            5 |         -9 |         0
+ 00018f77f2f0320c557190d7a144bdd3 | eb28e67c4c0b83846050ddfb8a35d051 | SP             | 7b07bacd811c4117b742569b04ce3580 |            4 |         -3 |         0
+ 000229ec398224ef6ca0657da4fc703e | 3818d81c6709e39d06b2738a8d3a2474 | MG             | 0c5b33dea94867d1ac402749e5438e8b |            5 |        -14 |         0
+ 00024acbcdf0a6daa1e931b038114c75 | af861d436cfc08b2c2ddefd0ba074622 | SP             | f4028d019cb58564807486a6aaf33817 |            4 |         -6 |         0
+ 00042b26cf59d7ce69dfabb4e55b4fd9 | 64b576fb70d441e8f1b2d7d446e483c5 | SP             | 940144190dcba6351888cafa43f3a3a5 |            5 |        -16 |         0
+ 00048cc3ae777c65dbb7d2a0634bc1ea | 85c835d128beae5b4ce8602c491bf385 | MG             | 5e4e50af3b7960b7a10d86ec869509e8 |            4 |        -15 |         0
+ 00054e8431b9d7675808bcb819fb4a32 | 635d9ac1680f03288e72ada3a1035803 | SP             | 0381de7572d99d75230ce91207807265 |            4 |        -17 |         0
+ 000576fe39319847cbb9d288c5617fa6 | fda4476abb6307ab3c415b7e6d026526 | SP             | f0733ebeb51b637dfdc953983c867b89 |            5 |        -16 |         0
+ 0005a1a1728c9d785b8e2b08b904576c | 639d23421f5517f69d0c3d6e6564cf0e | SP             | 67b1ab8f3ec19d5a90f153f21757d3a1 |            1 |          0 |         0
+ 0005f50442cb953dcd1d21e1fb923495 | 0782c41380992a5a533489063df0eef6 | SP             | 5c0b7e34ed85ec659bb064902d878e7a |            4 |        -19 |         0
+ 00061f2a7bc09da83e415a52dc8a4af1 | 107e6259485efac66428a56f10801f4f | SP             | 7e92c32ae297ef950ee69781d9f1760c |            5 |        -11 |         0
+ 00063b381e2406b52ad429470734ebd5 | 3fb97204945ca0c01bcf3eee6031c5f1 | SP             | 5595c192e3c1566ab4e7a2748b8ed297 |            5 |          0 |         0
+ 0006ec9db01a64e59a68b2c340bf65a7 | 7ed0ea20347f67fe61d1c99fdf8556ae | RJ             | 6322c405c0f34bf3ad870fd1a6b1fced |            5 |        -22 |         0
+ 0008288aa423d2a3f00fcb17cd7d8719 | 9e4159995424971423b98c4a8bc11529 | SP             | 5505c1cce299b1e0b3f8e4b428417362 |            5 |         -8 |         0
+ 0009792311464db532ff765bf7b182ae | 4987996ddcd0ddb20740fdce7c2bfbb1 | MG             | 236ccf78a5c4c350c18fdc1ae12b0187 |            5 |         -6 |         0
+ 0009c9a17f916a706d71784483a5d643 | 6062db572f3ef38b7a8ff4307abbfad3 | SP             | 787a452b54147f8f64737b1e040234af |            4 |         -9 |         0
+ 000aed2e25dbad2f9ddb70584c5a2ded | 6457be0b331148fb5454efc88d1e03d9 | SP             | 00800678dcf28b0ea0caef2147b6945d |            1 |         -4 |         0
+ 000c3e6612759851cc3cbb4b83257986 | f5f088001070650f9e9a8cd773621f35 | SP             | 51b9186876d4708a91786f8517fe7106 |            5 |        -13 |         0
+ 000e562887b1f2006d75e0be9558292e | b2c72d1e9f6430603b8337d8f1394a99 | SP             | 3b9a423bdbe8734ddfeb09bced16e5d9 |            3 |         -7 |         0
+ 000e63d38ae8c00bbcb5a30573b99628 | 860fc00d3154ce2346c43ebe47b9b6ce | SP             | 06f45fcd8b9b54c30b0de110eb849228 |            3 |         -9 |         0
+ 000e906b789b55f64edcb1f84030f90d | 3588484a539617d91500764822230fb6 | SP             | a5fb93d6a9e707bd84c07da74e8d79fd |            3 |          2 |         2
+ 000f25f4d72195062c040b12dce9a18a | 1a6cbc34ea404cb0af7ed74df0999354 | RJ             | 775038877f3c507777081ff685e14a60 |            4 |        -20 |         0
+ 001021efaa8636c29475e7734483457d | 2193383c470dc9cec894ce78afd0ebd6 | PR             | fa2d523cc60173d4889520763a2e4851 |            4 |        -15 |         0
+ 0010b2e5201cc5f1ae7e9c6cc8f5bd00 | e883f26917e2095c439f70c2cf8c914b | RJ             | f55e59915a07435c3615737a15470d96 |            5 |         -4 |         0
+ 00119ff934e539cf26f92b9ef0cdfed8 | 13df7b623839b4edc579ee40279d57c8 | RJ             | e79b1300216401c0212ab9b5a66372ff |            5 |        -15 |         0
+ 0011d82c4b53e22e84023405fb467e57 | 02daaa0e021d624d1784c4ea5cc84ace | SP             | 04a15fdeccc0572ca4f52b16cd50408a |            4 |        -20 |         0
+ 00125cb692d04887809806618a2a145f | 7ac26eac431c6848694a2de6f0327524 | GO             | 08af1a16cca5edd546f4a10b6e87af2e |            5 |        -13 |         0
+ 00130c0eee84a3d909e75bc08c5c3ca1 | b5910f24d2483d697b37e3857b621061 | SP             | 4ff9a24999699f7104ed23fec2563351 |            5 |         -7 |         0
+ 0013503b13da1eac686219390b7d641b | 1544f85dff3797491b60f2a5241d14c1 | SP             | b5c9aa83935388c89bd9b1b2ce6d1439 |            5 |         -8 |         0
+ 00137e170939bba5a3134e2386413108 | 38c3bc2d6df03905e3e8d3d5b079acf4 | RJ             | fe1711409007a1243f6fa3a1118d416c |            4 |         -7 |         0
+(30 rows)
+
+ review_score | reviews | avg_delay | late_reviews
+--------------+---------+-----------+--------------
+            1 |    9405 |     -4.05 |         3444
+            2 |    2941 |     -8.63 |          556
+            3 |    7961 |    -10.78 |          697
+            4 |   18987 |    -12.38 |          652
+            5 |   57059 |    -13.39 |         1060
+(5 rows)
+
+             order_id             | customer_state |            review_id             | review_score
+----------------------------------+----------------+----------------------------------+--------------
+ 00010242fe8c5a6d1ba2dd792cb16214 | RJ             | 97ca439bc427b48bc1cd7177abe71365 |            5
+ 00018f77f2f0320c557190d7a144bdd3 | SP             | 7b07bacd811c4117b742569b04ce3580 |            4
+ 000229ec398224ef6ca0657da4fc703e | MG             | 0c5b33dea94867d1ac402749e5438e8b |            5
+ 00024acbcdf0a6daa1e931b038114c75 | SP             | f4028d019cb58564807486a6aaf33817 |            4
+ 00042b26cf59d7ce69dfabb4e55b4fd9 | SP             | 940144190dcba6351888cafa43f3a3a5 |            5
+ 00048cc3ae777c65dbb7d2a0634bc1ea | MG             | 5e4e50af3b7960b7a10d86ec869509e8 |            4
+ 00054e8431b9d7675808bcb819fb4a32 | SP             | 0381de7572d99d75230ce91207807265 |            4
+ 000576fe39319847cbb9d288c5617fa6 | SP             | f0733ebeb51b637dfdc953983c867b89 |            5
+ 0005a1a1728c9d785b8e2b08b904576c | SP             |                                  |
+ 0005f50442cb953dcd1d21e1fb923495 | SP             | 5c0b7e34ed85ec659bb064902d878e7a |            4
+ 00061f2a7bc09da83e415a52dc8a4af1 | SP             | 7e92c32ae297ef950ee69781d9f1760c |            5
+ 00063b381e2406b52ad429470734ebd5 | SP             | 5595c192e3c1566ab4e7a2748b8ed297 |            5
+ 0006ec9db01a64e59a68b2c340bf65a7 | RJ             | 6322c405c0f34bf3ad870fd1a6b1fced |            5
+ 0008288aa423d2a3f00fcb17cd7d8719 | SP             | 5505c1cce299b1e0b3f8e4b428417362 |            5
+ 0009792311464db532ff765bf7b182ae | MG             | 236ccf78a5c4c350c18fdc1ae12b0187 |            5
+ 0009c9a17f916a706d71784483a5d643 | SP             | 787a452b54147f8f64737b1e040234af |            4
+ 000aed2e25dbad2f9ddb70584c5a2ded | SP             |                                  |
+ 000c3e6612759851cc3cbb4b83257986 | SP             | 51b9186876d4708a91786f8517fe7106 |            5
+ 000e562887b1f2006d75e0be9558292e | SP             |                                  |
+ 000e63d38ae8c00bbcb5a30573b99628 | SP             |                                  |
+ 000e906b789b55f64edcb1f84030f90d | SP             |                                  |
+ 000f25f4d72195062c040b12dce9a18a | RJ             | 775038877f3c507777081ff685e14a60 |            4
+ 001021efaa8636c29475e7734483457d | PR             | fa2d523cc60173d4889520763a2e4851 |            4
+ 0010b2e5201cc5f1ae7e9c6cc8f5bd00 | RJ             | f55e59915a07435c3615737a15470d96 |            5
+ 0010dedd556712d7bb69a19cb7bbd37a | SP             |                                  |
+ 00119ff934e539cf26f92b9ef0cdfed8 | RJ             | e79b1300216401c0212ab9b5a66372ff |            5
+ 0011d82c4b53e22e84023405fb467e57 | SP             | 04a15fdeccc0572ca4f52b16cd50408a |            4
+ 00125cb692d04887809806618a2a145f | GO             | 08af1a16cca5edd546f4a10b6e87af2e |            5
+ 00130c0eee84a3d909e75bc08c5c3ca1 | SP             | 4ff9a24999699f7104ed23fec2563351 |            5
+ 0013503b13da1eac686219390b7d641b | SP             | b5c9aa83935388c89bd9b1b2ce6d1439 |            5
+(30 rows)
+
+ orders_without_reviews
+------------------------
+                    768
+(1 row)
+
+CREATE VIEW
+CREATE VIEW
+             order_id             | joined_rows | inflated_price | item_count | review_count | true_price
+----------------------------------+-------------+----------------+------------+--------------+------------
+ 0035246a40f520710769010f752e7507 |           2 |         174.00 |          1 |            2 |      87.00
+ 013056cfe49763c6f66bda03396c5ee3 |           2 |         480.00 |          1 |            2 |     240.00
+ 0176a6846bcb3b0d3aa3116a9a768597 |           2 |          91.80 |          1 |            2 |      45.90
+ 02355020fd0a40a0d56df9f6ff060413 |           2 |         100.00 |          1 |            2 |      50.00
+ 029863af4b968de1e5d6a82782e662f5 |           2 |          51.98 |          1 |            2 |      25.99
+ 02e0b68852217f5715fb9cc885829454 |           2 |         113.98 |          1 |            2 |      56.99
+ 03515a836bb855b03f7df9dee520a8fc |           2 |         179.98 |          1 |            2 |      89.99
+ 03c939fd7fd3b38f8485a0f95798f1f6 |           3 |          78.00 |          1 |            3 |      26.00
+ 03eba6d9fef8f5b3e811d4b5a7cca9cd |           2 |         169.98 |          1 |            2 |      84.99
+ 04f1827088d972a62224f5203a071500 |           2 |         319.38 |          1 |            2 |     159.69
+(10 rows)
+
+ wrong_total | correct_total
+-------------+---------------
+ 13527224.77 |   13466945.00
+(1 row)

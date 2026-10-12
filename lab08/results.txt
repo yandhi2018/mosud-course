@@ -1,0 +1,56 @@
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+SELECT 5
+INSERT 0 0
+INSERT 0 0
+INSERT 0 0
+    table_name     |    constraint_name     | constraint_type
+-------------------+------------------------+-----------------
+ coupon_categories | 16390_16648_1_not_null | CHECK
+ coupon_categories | 16390_16648_2_not_null | CHECK
+ coupon_categories | fk_categories_coupon   | FOREIGN KEY
+ coupon_categories | fk_categories_olist    | FOREIGN KEY
+ coupon_categories | pk_coupon_categories   | PRIMARY KEY
+ coupon_uses       | 16390_16666_1_not_null | CHECK
+ coupon_uses       | 16390_16666_2_not_null | CHECK
+ coupon_uses       | 16390_16666_3_not_null | CHECK
+ coupon_uses       | 16390_16666_4_not_null | CHECK
+ coupon_uses       | 16390_16666_5_not_null | CHECK
+ coupon_uses       | 16390_16666_6_not_null | CHECK
+ coupon_uses       | ck_uses_amount         | CHECK
+ coupon_uses       | fk_uses_category       | FOREIGN KEY
+ coupon_uses       | fk_uses_coupon         | FOREIGN KEY
+ coupon_uses       | fk_uses_order          | FOREIGN KEY
+ coupon_uses       | pk_coupon_uses         | PRIMARY KEY
+ coupon_uses       | uq_coupon_uses_order   | UNIQUE
+ coupons           | 16390_16631_1_not_null | CHECK
+ coupons           | 16390_16631_2_not_null | CHECK
+ coupons           | 16390_16631_3_not_null | CHECK
+ coupons           | 16390_16631_4_not_null | CHECK
+ coupons           | 16390_16631_5_not_null | CHECK
+ coupons           | 16390_16631_6_not_null | CHECK
+ coupons           | 16390_16631_7_not_null | CHECK
+ coupons           | ck_coupons_dates       | CHECK
+ coupons           | ck_coupons_discount    | CHECK
+ coupons           | ck_coupons_limit       | CHECK
+ coupons           | fk_coupons_seller      | FOREIGN KEY
+ coupons           | pk_coupons             | PRIMARY KEY
+ coupons           | uq_coupons_code        | UNIQUE
+(30 rows)
+
+     relation      | count
+-------------------+-------
+ coupons           |     5
+ coupon_categories |     5
+ coupon_uses       |     5
+(3 rows)
+
+ use_id
+--------
+(0 rows)
+
+ coupon_code
+-------------
+(0 rows)
